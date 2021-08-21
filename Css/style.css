@@ -1,0 +1,22 @@
+
+/* button hover  */
+
+button{
+    border-color: black;
+    color: black;
+    font-weight: 400;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+    font-weight: 500;
+    
+}
+button:focus {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+
