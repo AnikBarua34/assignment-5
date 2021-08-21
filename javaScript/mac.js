@@ -41,11 +41,13 @@ function finalPricePromo() {
     }
 
     else {
-        alert("Enter 'stevekaku' Properly");
+        alert("Enter 'stevekaku' Properly For 20% discount");
     }
     promoInputField.value = '';
 }
 
+
+// BUtton Sections 
 // Memory Section 16 GB
 
 document.getElementById('16gb').addEventListener('click', function () {
@@ -111,27 +113,3 @@ document.getElementById('apply-btn').addEventListener('click', function () {
 
     finalPricePromo();
 })
-
-
-
-//     const inputField = document.getElementById('input');
-//     const applyPin = inputField.value;
-
-//     const finalTotalPriceField = document.getElementById('final-total-price');
-//     let finalTotalPriceText = finalTotalPriceField.innerText;
-
-//     let finalTotalPrice = parseInt(finalTotalPriceText);
-
-//     // applying 20 % discount
-//     var percent = 20;
-
-//     if (applyPin == 'stevekaku') {
-
-//         finalTotalPriceField.innerText = (percent / 100) * finalTotalPrice;
-//     }
-//     else {
-//         alert("Wrong Promo Code");
-//     }
-//     inputField.value = '';
-
-// })
