@@ -28,7 +28,7 @@ function finalTotalPrice(element) {
 }
 // function 5  Apply Promo Code
 
-function finalPricePromo() {
+function getDiscount() {
     const promoInputField = document.getElementById('input');
     const finalTotalPrice = document.getElementById('final-total-price');
     const totalPrice = document.getElementById('total-price');
@@ -111,5 +111,5 @@ document.getElementById('aug-21').addEventListener('click', function () {
 // Promo Code Section 
 document.getElementById('apply-btn').addEventListener('click', function () {
 
-    finalPricePromo();
+    getDiscount();
 })
