@@ -1,4 +1,6 @@
-
+body{
+    overflow-x: hidden;
+}
 /* button style*/
 
 button{
@@ -16,6 +18,5 @@ button:hover{
 button:focus {
     background-color: black;
     color: white;
-    font-weight: 500;
   }
 

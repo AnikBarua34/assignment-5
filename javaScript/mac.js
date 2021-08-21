@@ -41,7 +41,7 @@ function finalPricePromo() {
     }
 
     else {
-        alert("Enter 'stevekaku' Properly For 20% discount");
+        alert("Enter 'Valid Code' For 20% discount");
     }
     promoInputField.value = '';
 }
@@ -66,16 +66,16 @@ document.getElementById('8gb').addEventListener('click', function () {
 
 
 })
-// Storage  section 512 SSD
-document.getElementById('512').addEventListener('click', function () {
+// Storage  section 256 SSD
+document.getElementById('256').addEventListener('click', function () {
 
     getProductPrice('storage', 00);
 
     finalTotalPrice('storage');
 
 })
-// Storage  section 256 SSD
-document.getElementById('256').addEventListener('click', function () {
+// Storage  section 512 SSD
+document.getElementById('512').addEventListener('click', function () {
 
     getProductPrice('storage', 100);
 
