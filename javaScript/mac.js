@@ -26,7 +26,25 @@ function finalTotalPrice(element) {
     const totalprice = getTotalPrice(element) + newTotalPrice;
     oldTotalPrice.innerText = totalprice;
 }
+// function 5  Apply Promo Code
 
+function finalPricePromo() {
+    const promoInputField = document.getElementById('input');
+    const finalTotalPrice = document.getElementById('final-total-price');
+    const totalPrice = document.getElementById('total-price');
+    const discount = parseInt(totalPrice.innerHTML) / 100 * 20;
+
+
+    if (promoInputField.value == 'stevekaku') {
+        const totalPriceFinalPromo = parseInt(totalPrice.innerHTML) - discount;
+        finalTotalPrice.innerHTML = totalPriceFinalPromo;
+    }
+
+    else {
+        alert("Enter 'stevekaku' Properly");
+    }
+    promoInputField.value = '';
+}
 
 // Memory Section 16 GB
 
@@ -88,26 +106,32 @@ document.getElementById('aug-21').addEventListener('click', function () {
     finalTotalPrice('delivery');
 })
 
-
+// Promo Code Section 
 document.getElementById('apply-btn').addEventListener('click', function () {
 
-    const inputField = document.getElementById('input');
-    const applyPin = inputField.value;
-
-    const finalTotalPriceField = document.getElementById('final-total-price');
-    let finalTotalPriceText = finalTotalPriceField.innerText;
-    let finalTotalPrice = parseInt(finalTotalPriceText);
-
-    // applying 20 % discount
-    var percent = 20;
-
-    if (applyPin == 'anik') {
-
-        finalTotalPriceField.innerText = (percent / 100) * finalTotalPrice;
-    }
-    else {
-        alert("Wrong Promo Code");
-    }
-    inputField.value = '';
-
+    finalPricePromo();
 })
+
+
+
+//     const inputField = document.getElementById('input');
+//     const applyPin = inputField.value;
+
+//     const finalTotalPriceField = document.getElementById('final-total-price');
+//     let finalTotalPriceText = finalTotalPriceField.innerText;
+
+//     let finalTotalPrice = parseInt(finalTotalPriceText);
+
+//     // applying 20 % discount
+//     var percent = 20;
+
+//     if (applyPin == 'stevekaku') {
+
+//         finalTotalPriceField.innerText = (percent / 100) * finalTotalPrice;
+//     }
+//     else {
+//         alert("Wrong Promo Code");
+//     }
+//     inputField.value = '';
+
+// })
